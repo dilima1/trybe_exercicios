@@ -32,9 +32,14 @@
 
 .goomba {
     width: 100px;
+    position: absolute;
+    top: 540px;
+    left: 50px;
 }
 
-.baloon {}
+.baloon {
+
+}
 
 .speach {
     font-size: 25px;
@@ -42,4 +47,5 @@
 
 .bowser {
     width: 200px;
+    
 }
