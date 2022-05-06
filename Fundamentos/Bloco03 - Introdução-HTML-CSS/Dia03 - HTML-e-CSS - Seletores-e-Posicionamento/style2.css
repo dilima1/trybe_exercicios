@@ -25,6 +25,7 @@ div:hover{
 .title-1 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
+    font-style: italic;
 }
 
 .title-2 {
@@ -35,6 +36,7 @@ div:hover{
 .title-3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 70px;
+    font-style: italic;
 }
 
 .title-4 {
@@ -45,4 +47,5 @@ div:hover{
 .title-5 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 10px;
+    font-style: italic;
 }
