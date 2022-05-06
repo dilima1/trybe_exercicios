@@ -1,4 +1,23 @@
 div:hover{
     border: 5px solid red;
-    
+}
+
+.div1 {
+    color: blue;
+}
+
+.div2 {
+    color: pink;
+}
+
+.div3 {
+    color: purple;
+}
+
+.div4 {
+    color: red;
+}
+
+.div5 {
+    color: green;
 }
