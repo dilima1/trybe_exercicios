@@ -65,3 +65,15 @@
         top: 1000px;
     
 }
+
+h1, p {
+    text-align: center;
+}
+
+li:hover {
+    background-color:blueviolet ;
+}
+
+li:active {
+    font-family: 'Times New Roman', Times, serif;
+}
