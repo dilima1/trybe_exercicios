@@ -1,3 +1,11 @@
-h1 {
-    
+.frase {
+    background-color: yellow;
+}
+
+.par {
+    background-color: green;
+}
+
+.impar {
+    text-transform: uppercase;
 }
