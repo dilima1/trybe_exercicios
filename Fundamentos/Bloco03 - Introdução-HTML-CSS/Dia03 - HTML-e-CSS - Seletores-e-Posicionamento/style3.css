@@ -24,7 +24,7 @@ li {
 }
 
 .italic{
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .fonteazul{
@@ -33,5 +33,30 @@ li {
 
 .java{
     background-color: pink;
+}
+
+.passarmousestack:hover{
+font-weight: bold;
+color: orange;
+}
+
+.passarmousew3:hover {
+    font-weight: bold;
+    color: green;
+}
+
+.passarmousemdn:hover {
+    font-weight: bold;
+    color: blue;
+}
+
+.passarmousedev:hover {
+    font-weight: bold;
+    color:greenyellow;
+}
+
+.passarmousetry:hover {
+    font-weight: bold;
+    color: green;
 }
 
