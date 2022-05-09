@@ -1,0 +1,51 @@
+div:hover{
+    border: 5px solid red;
+}
+
+.div1 {
+    color: blue;
+}
+
+.div2 {
+    color: pink;
+}
+
+.div3 {
+    color: purple;
+}
+
+.div4 {
+    color: red;
+}
+
+.div5 {
+    color: green;
+}
+
+.title-1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-style: italic;
+}
+
+.title-2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.title-3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+    font-style: italic;
+}
+
+.title-4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.title-5 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    font-style: italic;
+}

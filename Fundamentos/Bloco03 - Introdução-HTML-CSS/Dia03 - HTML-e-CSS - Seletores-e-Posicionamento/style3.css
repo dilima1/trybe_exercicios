@@ -1,0 +1,62 @@
+.frase {
+    background-color: yellow;
+}
+
+.par {
+    background-color: green;
+}
+
+.impar {
+    text-transform: uppercase;
+}
+
+.title {
+    color: red;
+}
+
+.principal {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+.italic{
+    font-weight: bold;
+}
+
+.fonteazul{
+    color: blue;
+}
+
+.java{
+    background-color: pink;
+}
+
+.passarmousestack:hover{
+font-weight: bold;
+color: orange;
+}
+
+.passarmousew3:hover {
+    font-weight: bold;
+    color: green;
+}
+
+.passarmousemdn:hover {
+    font-weight: bold;
+    color: blue;
+}
+
+.passarmousedev:hover {
+    font-weight: bold;
+    color:greenyellow;
+}
+
+.passarmousetry:hover {
+    font-weight: bold;
+    color: green;
+}
+
