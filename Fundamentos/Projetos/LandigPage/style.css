@@ -12,10 +12,16 @@ body{
     width: 100%;
 }
 
+
 h3{
     display: inline-block;
-    float: right;
-    padding: 5px;
+}
+
+.h3{
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 5px;
     margin-top: 0;
 }
 
@@ -46,7 +52,7 @@ img {
 }
 
 h3.product{
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 .socialmedia-icon {
