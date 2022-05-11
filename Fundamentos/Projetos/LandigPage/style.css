@@ -34,6 +34,21 @@ h3{
     font-size: 20px;
 }
 
+article{
+    display: flex;
+
+}
+
+img {
+    width: 250px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+h3.product{
+    padding-top: 80px;
+}
+
 
 
 
