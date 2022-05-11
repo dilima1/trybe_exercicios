@@ -1,3 +1,8 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f1c0d;
+}
+
 #header{
     background-color: #FFC5E5;
     position: absolute;
