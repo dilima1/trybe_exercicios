@@ -1,3 +1,5 @@
+// =================================================[ VARIAVES ] ========================================================================
+
 // Exercicios do foquete, ira ajudar nos projetos
 
 // 1. Crie uma constante chamada myName e atribua a ela o seu nome (Exemplo: Carolina).
@@ -28,5 +30,34 @@ console.log(birthYear);
 
 // 6. Altere o valor atribuído à constante birthCity. Faça um console.log(birthCity) novamente! Você saberia explicar por que recebemos uma mensagem de erro?
 
-birthCity = "Lagoa do Carro"; //quando declaramos a variavel birthcity como constante não podemos altearr seu valor.
-console.log(birthCity);
+//birthCity = "Lagoa do Carro"; //quando declaramos a variavel birthcity como constante não podemos altearr seu valor.
+//console.log(birthCity);
+
+// ==============================================[ Tipos Primitivos, Tipagem Dinâmica e Operações Aritméticas ] ========================================================================
+let patientId = '50';
+let isEnrolled = true;
+const patientInfo = {
+  firstName: "Ana",
+  lastName: "Santos",
+};
+const patientEmail = "ana@email.com";
+
+console.log(typeof patientId);
+console.log(typeof isEnrolled);
+console.log(typeof patientInfo);
+console.log(typeof patientEmail);
+console.log(typeof patientAge);
+
+
+//Exercicios - Tipos Primitivos - FOQUETE
+
+// 1. Crie uma constante chamada base e uma variável chamada height e atribua os seus respectivos valores: 5 e 8. 
+
+const base = 5;
+let height = 8;
+const area = base * height ;
+const perimeter = base + height + base + height
+console.log(area);
+console.log(perimeter);
+
+
