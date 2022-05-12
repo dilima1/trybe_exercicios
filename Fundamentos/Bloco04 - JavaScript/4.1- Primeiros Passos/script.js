@@ -124,3 +124,5 @@ if(weekDay === "segunda-feira" || weekDay === "terça-feira" || weekDay === "qua
 // Exercicio OPERADOR NOT - !
 
 
+// ================================================[ SWITCH -- CASE ] ========================================================================
+
