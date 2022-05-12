@@ -60,4 +60,4 @@ const perimeter = base + height + base + height
 console.log(area);
 console.log(perimeter);
 
-
+// ================================================[ CONDIÇOES IF e ELSE ] ========================================================================
