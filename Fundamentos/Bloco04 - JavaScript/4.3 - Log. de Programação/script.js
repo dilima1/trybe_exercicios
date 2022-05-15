@@ -74,3 +74,11 @@ for (index = word.length - 1; index >= 0; index -= 1) {
 console.log(letras);
 
 // console.log(array[5] + array[4] + array[3] + array[2] + array[1] + array[0]);
+
+//  3- Considere o array de strings abaixo:
+
+// let array = ['java', 'javascript', 'python', 'html', 'css'];
+
+// Escreva dois algoritmos: um que retorne a maior palavra deste array e outro que retorne a menor. Considere o número de caracteres de cada palavra.
+
+// 4- Um número primo é aquele divisível apenas por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 0 e 50.
