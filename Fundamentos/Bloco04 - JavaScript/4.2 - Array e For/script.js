@@ -1,6 +1,6 @@
 // Leia atentamente os enunciados e faça o que se pede! Iremos utilizar esse array para realizar os exercícios do 1 ao 7:
 
-let numbers = [2, 2, 2, 2];
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // 1. Nesse primeiro exercício, percorra o array imprimindo todos os valores nele contidos com a função console.log();
 
@@ -96,12 +96,48 @@ for (index = 0; index < numbers.length; index += 1) {
     impar.push(numbers[index]);
   }
 }
-if (impar === []) {
+if (impar == "") {
   console.log("Nenhum valor impar encontrado");
 } else {
-  console.log(impar);
+  console.log(
+    "6 - O Array contem " +
+      impar.length +
+      " números impares, são eles " +
+      impar +
+      "."
+  );
 }
 
 // 7. Utilizando for, descubra qual o menor valor contido no array e imprima-o;
+
+let menor = numbers[0];
+
+for (index = 0; index < numbers.length; index += 1) {
+  if (menor < numbers[index]) {
+  } else {
+    menor = numbers[index];
+  }
+}
+console.log("7 - O valor menor do array é o número: " + menor + ".");
+
 // 8. Utilizando for, crie um array que vá de 1 até 25 e imprima o resultado;
+
+var myArray = [];
+
+for (index = 0; index < 25; index += 1) {
+  myArray.push(index + 1);
+}
+
+console.log("8 - Nosso novo Array é composto pelos numeros: " + myArray + ".");
+
 // 9. Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2.
+
+var resultados = [];
+var resulDivisao = "";
+
+for (index = 0; index < myArray.length; index += 1) {
+  resulDivisao = myArray[index] / 2;
+  resultados.push(resulDivisao);
+}
+
+console.log("9 - Nosso Array dividdo por 2 resulta nos seguintes números " + resultados + ".");
