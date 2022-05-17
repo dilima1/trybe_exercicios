@@ -111,3 +111,30 @@ console.log(
   leitor.nome + " tem " + leitor.livrosFavoritos.length + " livros favoritos."
 );
 console.log(separador);
+
+// ============================================= [ FUNÇÕES ] ============================================================
+var fun = "Exercicos de Função";
+console.log(fun);
+console.log(separador);
+
+function verificaPalindrome(palin1) {
+  let letras = "";
+  for (index = palin1.length - 1; index >= 0; index -= 1) {
+    letras += palin1[index];
+  }
+  if (palin1 === letras) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+}
+
+verificaPalindrome("desenvolvimento");
+
+// let word = "tryber";
+// let letras = "";
+
+// for (index = word.length - 1; index >= 0; index -= 1) {
+//   letras += word[index];
+// }
+// console.log(letras);
