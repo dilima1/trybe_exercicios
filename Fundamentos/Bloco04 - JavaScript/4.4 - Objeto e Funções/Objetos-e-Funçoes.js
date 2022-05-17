@@ -146,3 +146,39 @@ console.log(
     player.medals.silver +
     " medalhas de prata."
 );
+console.log(separador);
+
+let names = {
+  person1: "João",
+  person2: "Maria",
+  person3: "Jorge",
+};
+
+for (let key in names) {
+  console.log("Olá " + names[key] + ".");
+}
+
+console.log(separador);
+
+let car = {
+  model: "A3 Sedan",
+  manufacturer: "Audi",
+  year: 2020,
+};
+
+for (key in car) {
+  console.log(key, car[key]);
+}
+
+console.log(separador);
+
+function bomDiaTryber(nome) {
+  console.log('Bom dia, ' + nome);
+}
+
+bomDiaTryber('João'); // Bom dia, João
+bomDiaTryber('Julia'); // Bom dia, Julia
+bomDiaTryber('Marcelo'); // Bom dia, Marcelo
+bomDiaTryber('Edilson')
+
+console.log(separador);

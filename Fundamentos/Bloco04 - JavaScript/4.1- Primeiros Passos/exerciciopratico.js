@@ -1,3 +1,6 @@
+let separador =
+  "--------------------------------------------------------------------------";
+
 // 1. Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas constantes, a e b, definidas no começo com os valores que serão operados. Faça programas para:
 
 //     Adição (a + b)
@@ -6,89 +9,174 @@
 //     Divisão (a / b)
 //     Módulo (a % b)
 
-const a = 10;
-const b = 2;
+// const a = 10;
+// const b = 2;
 
-console.log(a + b);
-console.log(a - b);
-console.log(a * b);
-console.log(a / b);
-console.log(a % b);
+// console.log(a + b);
+// console.log(a - b);
+// console.log(a * b);
+// console.log(a / b);
+// console.log(a % b);
+// console.log(separador);
+//refatorando
+
+function operacao_soma(a, b) {
+  return a + b;
+}
+
+function operacao_dimi(a, b) {
+  return a - b;
+}
+
+function operacao_mult(a, b) {
+  return a * b;
+}
+
+function operacao_divi(a, b) {
+  return a / b;
+}
+
+function operacao_resto(a, b) {
+  return a % b;
+}
+
+console.log(operacao_soma(10, 2));
+console.log(operacao_dimi(10, 2));
+console.log(operacao_mult(10, 2));
+console.log(operacao_divi(10, 2));
+console.log(operacao_resto(10, 2));
+
+console.log(separador);
 
 // 2. Faça um programa que retorne o maior de dois números. Defina no começo do programa duas constantes com os valores que serão comparados.
 
-const numero1 = 15;
-const numero2 = 20;
+// const numero1 = 15;
+// const numero2 = 20;
 
-if (numero1 > numero2) {
-  console.log("O número " + numero1 + " é maior que o número " + numero2);
-} else {
-  console.log("O número " + numero2 + " é maior que o número " + numero1);
+// if (numero1 > numero2) {
+//   console.log("O número " + numero1 + " é maior que o número " + numero2);
+// } else {
+//   console.log("O número " + numero2 + " é maior que o número " + numero1);
+// }
+
+//refatorando
+
+function comparacao(number1, number2) {
+  if (number1 > number2) {
+    return "O Numero " + number1 + " é maior que o número " + number2 + ".";
+  } else {
+    return "O Numero " + number2 + " é maior que o número " + number1 + ".";
+  }
 }
+
+console.log(comparacao(15, 20));
+
+console.log(separador);
 
 //     3. Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados.
 
-const number1 = 10;
-const number2 = 25;
-const number3 = 50;
+// const number1 = 10;
+// const number2 = 25;
+// const number3 = 50;
 
-if (number1 > number2 && number1 > number3) {
-  console.log(
-    "O número " +
-      number1 +
-      " é maior que o número " +
-      number2 +
-      " e maior que o numero " +
-      number3
-  );
-} else if (number2 > number1 && number2 > number3) {
-  console.log(
-    "O número " +
-      number2 +
-      " é maior que o número " +
-      number1 +
-      " e maior que o numero " +
-      number3
-  );
-} else {
-  console.log(
-    "O número " +
-      number3 +
-      " é maior que o número " +
-      number1 +
-      " e maior que o numero " +
-      number2
-  );
+// if (number1 > number2 && number1 > number3) {
+//   console.log(
+//     "O número " +
+//       number1 +
+//       " é maior que o número " +
+//       number2 +
+//       " e maior que o numero " +
+//       number3
+//   );
+// } else if (number2 > number1 && number2 > number3) {
+//   console.log(
+//     "O número " +
+//       number2 +
+//       " é maior que o número " +
+//       number1 +
+//       " e maior que o numero " +
+//       number3
+//   );
+// } else {
+//   console.log(
+//     "O número " +
+//       number3 +
+//       " é maior que o número " +
+//       number1 +
+//       " e maior que o numero " +
+//       number2
+//   );
+// }
+//refatorando
+let numeroMaior = 0;
+function quesitoTerceiro() {
+  arrayNumber = [10, 50, 25];
+
+  for (index = 0; index < arrayNumber.length; index += 1) {
+    if (arrayNumber[index] > numeroMaior) {
+      numeroMaior = arrayNumber[index];
+    }
+  }
 }
+quesitoTerceiro();
+console.log("O número maior da lista é o " + numeroMaior + ".");
+console.log(separador);
 
 //     4. Faça um programa que, dado um valor definido numa constante, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário.
 
-const temp = 15;
+// const temp = 15;
 
-if (temp > 0) {
-  console.log("positive");
-} else {
-  console.log("negative");
+// if (temp > 0) {
+//   console.log("positive");
+// } else {
+//   console.log("negative");
+// }
+
+//refatorando
+
+function medirTemperatura(param1) {
+  if (param1 > 0) {
+    return "positive";
+  } else {
+    return "negative";
+  }
 }
+
+console.log(medirTemperatura(-20));
+console.log(separador);
 
 //     5. 🚀 Faça um programa que defina três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false, caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
 
 //     Para os ângulos serem de um triângulo válido, a soma dos três devem ser 180 graus.
 //     Um ângulo será considerado inválido se não tiver um valor positivo.
 
-const angulo1 = 50;
-const angulo2 = 60;
-const angulo3 = -60;
-const soma = angulo1 + angulo2 + angulo3;
+// const angulo1 = 50;
+// const angulo2 = 60;
+// const angulo3 = -60;
+// const soma = angulo1 + angulo2 + angulo3;
 
-if (soma === 180) {
-  console.log(true);
-} else if (angulo1 < 0 || angulo2 < 0 || angulo3 < 0) {
-  console.log("Angulo invalido, favor digitar novamente.");
-} else {
-  console.log(false);
+// if (soma === 180) {
+//   console.log(true);
+// } else if (angulo1 < 0 || angulo2 < 0 || angulo3 < 0) {
+//   console.log("Angulo invalido, favor digitar novamente.");
+// } else {
+//   console.log(false);
+// }
+//refatorando
+function anguloTriangulo(ang1, ang2, ang3, soma) {
+  soma = ang1 + ang2 + ang3;
+
+  if (soma === 180) {
+    return true;
+  } else if (ang1 < 0 || ang2 < 0 || ang3 < 0) {
+    return "Angulo invalido, favor digitar novamente.";
+  } else {
+    return false;
+  }
 }
 
+console.log(anguloTriangulo(50, 60, -60));
+console.log(separador);
 // 6. Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
 
 // Como desafio, faça o programa funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
