@@ -1,3 +1,6 @@
+let separador =
+  "--------------------------------------------------------------------------";
+
 // Algoritmo de como se vestir para uma festa:
 
 // 1. Ir ate o Armario.
@@ -54,11 +57,12 @@
 const valorFatorado = 10;
 let resultado = 1;
 
-for (let index = 1; index <= valorFatorado; index += 1) {
+for (index = 1; index <= valorFatorado; index += 1) {
   resultado = resultado * index;
 }
 
 console.log("1 - O fatorial de " + valorFatorado + " é " + resultado + ".");
+console.log(separador);
 
 //  2- Agora, desenvolva um algoritmo que é capaz de inverter uma palavra. Por exemplo, a palavra "banana" seria invertida para "ananab".
 // Utilize a string abaixo como exemplo, depois troque por outras para verificar se seu algoritmo está funcionando corretamente.
@@ -72,13 +76,63 @@ for (index = word.length - 1; index >= 0; index -= 1) {
   letras += word[index];
 }
 console.log(letras);
+console.log(separador);
 
 // console.log(array[5] + array[4] + array[3] + array[2] + array[1] + array[0]);
 
 //  3- Considere o array de strings abaixo:
 
-// let array = ['java', 'javascript', 'python', 'html', 'css'];
+let array = ["java", "javascript", "python", "html", "css"];
 
 // Escreva dois algoritmos: um que retorne a maior palavra deste array e outro que retorne a menor. Considere o número de caracteres de cada palavra.
 
+let numeroMaior = array[0];
+let numeroMenor = array[0];
+
+for (index = 0; index < array.length; index += 1) {
+  if (array[index].length > numeroMaior.length) {
+    numeroMaior = array[index];
+  }
+}
+
+for (index = 0; index < array.length; index += 1) {
+  if (array[index].length < numeroMenor.length) {
+    numeroMenor = array[index];
+  }
+}
+
+console.log(numeroMaior);
+console.log(numeroMenor);
+console.log(separador);
+
 // 4- Um número primo é aquele divisível apenas por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 0 e 50.
+
+let biggestPrimeNumber = 0;
+
+for (let currentNumber = 0; currentNumber <= 50; currentNumber += 1) {
+  let isPrime = true;
+  for (
+    let currentDivisor = 2;
+    currentDivisor < currentNumber;
+    currentDivisor += 1
+  ) {
+    if (currentNumber % currentDivisor === 0) {
+      isPrime = false;
+    }
+  }
+  if (isPrime) {
+    biggestPrimeNumber = currentNumber;
+  }
+}
+
+console.log(biggestPrimeNumber);
+
+// resultDivi1 = myArray[index] % 2;
+
+// if (myArray[index] > 0 && myArray[index] > 1 && myArray[index] === 2) {
+//   arrayPrimos.push(index);
+// } else if (resultDivi1 != 0 && myArray[index] > 0 && myArray[index] > 1 && myArray[index] <= 7) {
+//   arrayPrimos.push(index);
+// }else if (resultDivi1 != 0 && myArray[index] / 1 === 0 && myArray[index] / myArray[index] === 0) {
+//   arrayPrimos.push(index);
+// }
