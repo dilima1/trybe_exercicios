@@ -117,24 +117,152 @@ var fun = "Exercicos de Função";
 console.log(fun);
 console.log(separador);
 
+//1 - Crie uma função que receba uma string e retorne true se for um palíndromo, ou false, se não for.
+
 function verificaPalindrome(palin1) {
   let letras = "";
   for (index = palin1.length - 1; index >= 0; index -= 1) {
     letras += palin1[index];
   }
   if (palin1 === letras) {
-    console.log(true);
+    console.log("1 - " + true);
   } else {
-    console.log(false);
+    console.log("1 - " + false);
   }
 }
 
 verificaPalindrome("desenvolvimento");
+console.log(separador);
 
-// let word = "tryber";
-// let letras = "";
+//Array para resposta dos quesitos 2 e 3.
 
-// for (index = word.length - 1; index >= 0; index -= 1) {
-//   letras += word[index];
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27, 1];
+console.log("Array para questões 2 e 3 - [ " + numbers + " ]");
+
+console.log(separador);
+
+//2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+
+//MAIOR
+
+function descobrirIndiceMaior() {
+  let maior = "";
+  let indiceMaior = "";
+  for (index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] > maior) {
+      maior = numbers[index];
+      indiceMaior = [index];
+    }
+  }
+  return console.log(
+    "2 - O maior valor do Array encontra-se no indice: " + indiceMaior + "."
+  );
+}
+descobrirIndiceMaior();
+console.log(separador);
+
+//3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+
+//MENOR
+
+function descobrirIndiceMenor() {
+  let menor = numbers[0];
+  let indiceMenor = "";
+
+  for (index = 0; index < numbers.length; index += 1) {
+    if (menor < numbers[index]) {
+    } else {
+      menor = numbers[index];
+      indiceMenor = [index];
+    }
+  }
+  return console.log(
+    "3 - O menor valor do Array encontra-se no indice: " + indiceMenor + "."
+  );
+}
+
+descobrirIndiceMenor();
+console.log(separador);
+
+//4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
+
+let casais = ["Edilson", "Crislayne", "Joe", "Juliana", "Edielson", "Lilian"];
+console.log("Array para a questão 4 - [ " + casais + " ]");
+
+console.log(separador);
+
+function palavraMaior() {
+  let numeroMaior = "";
+  for (index = 0; index < casais.length; index += 1) {
+    if (casais[index].length > numeroMaior.length) {
+      numeroMaior = casais[index];
+    }
+  }
+  return console.log("4 - " + numeroMaior);
+}
+
+palavraMaior();
+
+//5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+
+console.log(separador);
+
+// 6 - Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N.
+
+//     Valor de teste: N = 5.
+//     Valor esperado no retorno da função: 1+2+3+4+5 = 15.
+
+function somatorio(valor) {
+  let valorFatorado = valor;
+  let resultado = 0;
+
+  for (let index = 0; index <= valorFatorado; index += 1) {
+    resultado = resultado + index;
+  }
+  return console.log(resultado);
+}
+
+somatorio(5);
+
+//FORMA 2 de FAZER - VIDEO GUANABARA:
+
+// function fatorial(n) {
+//   let fat = 1;
+//   for (let index = n; index > 1; index -= 1) {
+//     fat += index;
+//   }
+//   return fat;
 // }
-// console.log(letras);
+// console.log(fatorial(5));
+
+console.log(separador);
+
+// 7 - Crie uma função que receba uma string word e outra string ending. Verifique se a string ending é o final da string word. Considere que a string ending sempre será menor que a string word.
+
+//     Valor de teste: 'trybe' e 'be'
+//     Valor esperado no retorno da função: true
+//     verificaFimPalavra('trybe', 'be');
+//     Retorno esperado: true
+//     verificaFimPalavra('joaofernando', 'fernan');
+//     Retorno esperado: false
+
+function verificaFimPalavra(palavra, fimPalavra) {
+  let word = palavra.split("").reverse().join("");
+  let ending = fimPalavra.split("").reverse().join("");
+  let result;
+
+  for (let index = 0; index < ending.length; index += 1) {
+    if (word[index] !== ending[index]) {
+      result = false;
+      break;
+    } else {
+      result = true;
+    }
+  }
+
+  return console.log(result);
+}
+
+verificaFimPalavra("trybe", "be");
+
+
