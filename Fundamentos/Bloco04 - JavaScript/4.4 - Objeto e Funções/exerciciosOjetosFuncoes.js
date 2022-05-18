@@ -223,6 +223,15 @@ function somatorio(valor) {
 }
 
 somatorio(5);
+=======
+
+let maior = "";
+
+for (index = 0; index < numbers.length; index += 1) {
+  if (numbers[index] > maior) {
+    maior = numbers[index];
+  }
+}
 
 //FORMA 2 de FAZER - VIDEO GUANABARA:
 
