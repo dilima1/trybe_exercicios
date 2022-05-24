@@ -78,12 +78,16 @@ for (let index = 0; index < listaNumeros.length; index += 1) {
 
 //9. 🚀 Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
 
-let elementoNonoQuesito = document.createElement("h3");
-let elementoNonoQuesito2 = document.createElement("h3");
-let elementoNonoQuesito3 = document.createElement("h3");
-tagMain.appendChild(elementoNonoQuesito);
-tagMain.appendChild(elementoNonoQuesito2);
-tagMain.appendChild(elementoNonoQuesito3);
+// for (let index = 0; index < 3; index += 1) {
+//   let elementoNonoQuesito = document.createElement("h1");
+//   tagMain.appendChild(elementoNonoQuesito);
+// }
+//   let elementoNonoQuesito = document.createElement("h3");
+// let elementoNonoQuesito2 = document.createElement("h3");
+// let elementoNonoQuesito3 = document.createElement("h3");
+// tagMain.appendChild(elementoNonoQuesito);
+// tagMain.appendChild(elementoNonoQuesito2);
+// tagMain.appendChild(elementoNonoQuesito3);
 
 //Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
 
