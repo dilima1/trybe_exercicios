@@ -56,10 +56,10 @@ for (let index = 0; index < feriados.length; index += 1) {
 
 //1.3     Os dias 4, 11, 18 e 25 são Sexta-feira. Eles devem conter a classe day e a classe friday. Ex: <li class="day friday">4</li>
 
-let sextaFeiras = [14, 21, 28];
+let sextaFeiras = [14, 21, 28, 35];
 for (let index = 0; index < sextaFeiras.length; index += 1) {
   let diaTwo = sextaFeiras[index];
-  holiday[diaTwo].className = "day friday";
+  holiday[diaTwo].classList.add("friday");
 }
 
 // 🚀 Exercício 2:
@@ -123,9 +123,13 @@ buttonFriday.appendChild(createButton2("Sexta-Feiras"));
 function sextou() {
   for (let index = 0; index < dezDaysList.length; index += 1) {
     let classe = listDays.childNodes[index];
+    console.log(classe);
     if (classe.className.includes("friday")) {
       if (classe.innerText === "SEXTOU!!!") {
-        classe.innerText = classe;
+        listDays.childNodes[5].innerText = "4";
+        listDays.childNodes[12].innerText = "11";
+        listDays.childNodes[19].innerText = "18";
+        listDays.childNodes[26].innerText = "25";
       } else {
         classe.innerText = "SEXTOU!!!";
       }
@@ -156,21 +160,69 @@ list.addEventListener("mouseout", diminuir, false);
 
 //     O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks".
 
+let localTarefa = document.querySelector(".my-tasks");
+let buttonTarefa = document.querySelector("#btn-add");
+
+function inserirTarefa(tarefa) {
+  let newSpan = document.createElement("span");
+  // let quebraLinha = document.createElement("br");
+  newSpan.innerHTML = tarefa;
+  localTarefa.appendChild(newSpan);
+  // localTarefa.appendChild(quebraLinha);
+}
+inserirTarefa("Projetos");
+
 // 🚀 Exercício 8:
 // Implemente uma função que adiciona uma legenda com cor para a tarefa criada no exercício anterior. Esta função deverá receber como parâmetro uma string ("cor") e criar dinamicamente um elemento de tag <div> com a classe task.
 
 //     O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada.
 //     O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks".
 
+function adicionaCorLegenda(cor, text) {
+  let newDiv = document.createElement("div");
+  newDiv.id = "task";
+  newDiv.style.backgroundColor = cor;
+  localTarefa.appendChild(newDiv);
+}
+adicionaCorLegenda("red", "Projeto");
+
 // 🚀 Exercício 9:
 // Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected, ou seja, quando sua tarefa possuir a classe task selected, ela estará selecionada.
 
 //     Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task, ou seja, esta tarefa está deixando de ser uma tarefa selecionada.
+let selectedClass = document.getElementById("task");
+
+function selectClass() {
+  if (selectedClass.className === "") {
+    selectedClass.classList = "task selected";
+  } else {
+    selectedClass.classList = "task";
+  }
+}
+
+selectedClass.addEventListener("click", selectClass);
 
 // 🚀 Exercício 10:
 // Implemente uma função que adiciona um evento que, ao clicar em um dia do mês no calendário, atribua a este dia a cor da legenda da sua tarefa selecionada.
 
 //     Ao clicar novamente no dia com a cor da legenda, a sua cor deverá voltar à configuração inicial rgb(119,119,119).
+
+function mudaCor(e) {
+  if (
+    e.target.style.backgroundColor === "" ||
+    e.target.style.backgroundColor === "rgb(238, 238, 238)"
+  ) {
+    e.target.style.backgroundColor = "RED";
+    e.target.style.color = "white";
+    // console.log(e.target.style.backgroundColor);
+  } else {
+    e.target.style.backgroundColor = "#eee";
+    e.target.style.color = "#777";
+    // console.log(e.target.style.backgroundColor);
+  }
+}
+
+list.addEventListener("click", mudaCor, false);
 
 // 🚀 Bônus:
 // Vamos adicionar compromissos ao seu calendário? Implemente uma função que, ao digitar um compromisso na caixa de texto "COMPROMISSOS", adiciona o item à lista "MEUS COMPROMISSOS" ao clicar no botão "ADICIONAR".
