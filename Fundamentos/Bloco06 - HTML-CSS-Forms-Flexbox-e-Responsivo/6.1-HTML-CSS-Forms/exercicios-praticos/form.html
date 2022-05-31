@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TrybeTrip</title>
+  </head>
+  <body>
+    <header>
+      <h1>TrybeTrip</h1>
+    </header>
+    <section>
+      <form action="" method="get" enctype="multipart/form-data">
+        <label for="nome-part"
+          >Nome:
+          <input
+            type="text"
+            name="nome"
+            id="nome-part"
+            minlength="10"
+            maxlength="40"
+          />
+        </label>
+        <br />
+        <br />
+        <label for="email-part"
+          >Email:
+          <input
+            type="email"
+            name="email"
+            id="email-part"
+            minlength="10"
+            maxlength="50"
+          />
+        </label>
+        <br />
+        <p>Escolha o Destino:</p>
+        <label for="destino-1">
+          <input
+            type="radio"
+            name="destinos"
+            id="destino-1"
+            value="Cidade"
+          />Cidade
+        </label>
+        <label for="destino-2">
+          <input
+            type="radio"
+            name="destinos"
+            id="destino-2"
+            value="Campo"
+          />Campo
+        </label>
+        <label for="destino-3">
+          <input
+            type="radio"
+            name="destinos"
+            id="destino-3"
+            value="Praia"
+          />Praia
+        </label>
+        <label for="destino-4">
+          <input
+            type="radio"
+            name="destinos"
+            id="destino-4"
+            value="Montanhas"
+          />Montanhas
+        </label>
+        <br />
+        <p>Por que você severia ser a pessoa desenvolvedora ganhadora?</p>
+        <textarea
+          name="resposta"
+          id="resposta-usuario"
+          cols="40"
+          rows="10"
+          maxlength="500"
+        ></textarea>
+        <br />
+        <label for="date"
+          >Data:
+          <input type="date" name="data" id="date" />
+        </label>
+        <br />
+        <label for="condicao1">
+          <input type="checkbox" name="condicoes" id="condicao1" />
+          Gostaria de receber outras incriveis oportunidades oferecidas pela
+          Traybe?
+        </label>
+        <br />
+        <label for="condicao2">
+          <input type="checkbox" name="condicoes" id="condicao2" />
+          Concordo que imagens das minhas férias poderão ser usadas na
+          divulgação de concursos livres.
+        </label>
+        <br />
+        <label for="botao-enviar">
+          <button type="submit" name="botao1" id="botao-enviar">Enviar</button>
+        </label>
+        <label for="botao-apagar">
+          <button type="submit" name="botao2" id="botao-apagar">Apagar</button>
+        </label>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
