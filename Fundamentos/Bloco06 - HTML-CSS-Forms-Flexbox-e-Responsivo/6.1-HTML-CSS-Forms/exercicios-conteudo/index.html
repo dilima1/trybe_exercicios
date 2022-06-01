@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--1 - Adicione os campos de entrada para email e senha.
+        2 - Adicione um checkbox com o texto Lembre-me.
+        3 - Adicione um botão com o texto Entrar.
+        4 - Adicione os placeholder Digite seu email e Digite sua senha para os campos de email e senha.
+        5 - Adicione o atributo required para os campos de email e senha.
+        6 - Adicione o atributo autocomplete="off" para o campo de email.
+        7 - Adicione o atributo autofocus para o campo de email. -->
+    <h3>Parte 2 - Criando um Formulario Login/Senha</h3>
+    <form action="">
+      <p>Digite seu e-mail:</p>
+      <input
+        type="text"
+        placeholder="Digite seu Email."
+        required
+        autocomplete="off"
+        autofocus
+      />
+      <p>Digite sua senha:</p>
+      <input type="password" placeholder="Digite sua senha." required />
+      <button type="submit">Entrar</button>
+    </form>
+    <hr />
+    <h3>Parte 3 - Criando um Formulario Completo</h3>
+    <form action="" method="get" enctype="multipart/form-data">
+      <label for="nome-completo"
+        >Nome Completo:
+        <!--sempre que quisermos fazer menção do elementeo dentro da label devemos inserir o ID no campo for -->
+        <input
+          type="text"
+          name="nome"
+          id="nome-completo"
+          placeholder="Digite seu Nome."
+          required
+        />
+      </label>
+      <br />
+      <label for="input-email"
+        >E-mail:
+        <input
+          type="email"
+          name="email"
+          id="input-email"
+          placeholder="Digite seu Nome."
+          required
+        />
+      </label>
+      <br />
+      <label for="input-estado"
+        >Estado onde Você Mora:
+        <select name="estado" id="input-estado">
+          <option value="pe">Pernambuco</option>
+          <option value="rn" selected>Rio Grande do Norte</option>
+          <option value="pb">Paraiba</option>
+          <option value="ba">Bahia</option>
+        </select>
+      </label>
+      <br />
+      <p>Selecione sua foto:</p>
+      <input type="file" name="foto" id="foto-perfil" />
+      <br />
+      <p>Comidas favoritas:</p>
+      <label for="comida-1">
+        <input
+          type="radio"
+          name="comida-favorita"
+          id="comida-1"
+          value="pizza"
+          checked
+        />Pizza
+      </label>
+      <label for="comida-2">
+        <input
+          type="radio"
+          name="comida-favorita"
+          id="comida-2"
+          value="lasanha"
+        />Lasanha
+      </label>
+      <label for="comida-3">
+        <input
+          type="radio"
+          name="comida-favorita"
+          id="comida-3"
+          value="pirao"
+        />Pirão
+      </label>
+      <label for="comida-4">
+        <input
+          type="radio"
+          name="comida-favorita"
+          id="comida-4"
+          value="rabada"
+        />Rabada
+      </label>
+      <br />
+      <p>Escreva algo sobre você:</p>
+      <textarea name="sobre-mim" id="textarea1" cols="30" rows="5"></textarea>
+      <br />
+      <p>Digite sua senha:</p>
+      <label for="input-senha">
+        <input type="password" name="senha" id="input-senha" required />
+      </label>
+      <br />
+      <label for="checkbox-noticias">
+        <input type="checkbox" name="promocoes" id="checkbox-noticias" />Deseja
+        receber nossas noticias?
+      </label>
+      <br />
+      <button type="submit">Enviar Formulario</button>
+    </form>
+    <hr />
+    <h3>Parte 4 - Entenda o prevent default</h3>
+    <a href="www.betrybe.com" target="_blank" id="href">TRYBE</a>
+    <input type="text" id="input-text" />
+    <input type="checkbox" id="input-checkbox" />
+
+    <script src="script.js"></script>
+  </body>
+</html>
