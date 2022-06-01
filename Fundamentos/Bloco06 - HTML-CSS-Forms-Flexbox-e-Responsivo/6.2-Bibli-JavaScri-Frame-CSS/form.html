@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-Br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Frameworks/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./Frameworks/DatePickerX.min.css" />
+    <script src="./Frameworks/DatePickerX.min.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <title>TrybeTrip</title>
   </head>
   <body>
@@ -12,7 +16,7 @@
       <h1>TrybeTrip</h1>
     </header>
     <section>
-      <form action="" method="get" enctype="multipart/form-data">
+      <form id="form" action="" method="get" enctype="multipart/form-data">
         <div class="mb-3">
           <label for="nome-part" class="form-label"
             >Nome:
@@ -93,13 +97,23 @@
         <br />
         <br />
         <label for="condicao1">
-          <input type="checkbox" name="condicoes" id="condicao1" class="form-check-input" />
+          <input
+            type="checkbox"
+            name="condicoes"
+            id="condicao1"
+            class="form-check-input"
+          />
           Gostaria de receber outras incriveis oportunidades oferecidas pela
           Traybe?
         </label>
         <br />
         <label for="condicao2">
-          <input type="checkbox" name="condicoes"  class="form-check-input" id="condicao2" />
+          <input
+            type="checkbox"
+            name="condicoes"
+            class="form-check-input"
+            id="condicao2"
+          />
           Concordo que imagens das minhas férias poderão ser usadas na
           divulgação de concursos livres.
         </label>
@@ -116,10 +130,24 @@
         </label>
         <br /><br />
         <label for="botao-enviar">
-          <button type="submit" name="botao1" id="botao-enviar" class="btn btn-primary">Enviar</button>
+          <button
+            type="submit"
+            name="botao1"
+            id="botao-enviar"
+            class="btn btn-primary"
+          >
+            Enviar
+          </button>
         </label>
         <label for="botao-apagar">
-          <button type="submit" name="botao2" id="botao-apagar" class="btn btn-danger">Apagar</button>
+          <button
+            type="submit"
+            name="botao2"
+            id="botao-apagar"
+            class="btn btn-danger"
+          >
+            Apagar
+          </button>
         </label>
       </form>
     </section>
