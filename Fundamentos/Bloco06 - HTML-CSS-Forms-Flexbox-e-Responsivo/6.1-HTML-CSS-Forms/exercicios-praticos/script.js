@@ -1,5 +1,12 @@
 const botaoEnviar = document.getElementById("botao-enviar");
 const botaoLimpar = document.getElementById("botao-apagar");
+const condicaoOne = document.getElementById("condicao1");
+const condicaoTwo = document.getElementById("condicao2");
+const enviarFoto = document.getElementById("uploadImg");
+const nome = document.getElementById("nome-part");
+const email = document.getElementById("email-part");
+const resposta = document.getElementById("resposta-usuario");
+const data = document.getElementById("date");
 
 function desabilitarBotao(e) {
   e.preventDefault();
@@ -8,12 +15,42 @@ function desabilitarBotao(e) {
 botaoEnviar.addEventListener("click", desabilitarBotao);
 
 function limparCampos() {
-  document.getElementById("nome-part").value = "";
-  document.getElementById("email-part").value = "";
-  document.getElementById("resposta-usuario").value = "";
-  document.getElementById("date").value = "";
-  document.getElementById("condicao1").checked = false;
-  document.getElementById("condicao2").checked = false;
+  nome.value = "";
+  email.value = "";
+  resposta.value = "";
+  data.value = "";
+  condicaoOne.checked = false;
+  condicaoTwo.checked = false;
 }
 
 botaoLimpar.addEventListener("click", limparCampos);
+
+function enviarFotos() {
+  if (condicaoTwo.checked == true) {
+    enviarFoto.disabled = false;
+  } else {
+    enviarFoto.disabled = true;
+  }
+}
+
+condicaoTwo.addEventListener("click", enviarFotos);
+
+// alerta deve ser mostrado com a mensagem: 'Dados Inválidos'. Caso contrário, a mensagem 'Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.' deverá aparecer na tela
+
+function verificaCampos() {
+  if (
+    nome.value.length >= 10 &&
+    nome.value.length <= 40 &&
+    email.value.length >= 10 &&
+    email.value.length <= 50 &&
+    resposta.value.length <= 500
+  ) {
+    alert(
+      "Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip"
+    );
+  } else {
+    alert("Dados Inválidos");
+  }
+}
+
+botaoEnviar.addEventListener("click", verificaCampos);
