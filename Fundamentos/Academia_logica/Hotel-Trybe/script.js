@@ -34,7 +34,7 @@ function fazerReserva() {
 
   ol.appendChild(reservaDia);
 
-  //Reserva para o dia xx/xx/xxxx até o dia xx/xx/xxxx
+  //Reserva para o dia xx/xx/xxxx até o dia xx/xx/x
 }
 
 btnSubmit.addEventListener("click", fazerReserva);
