@@ -36,25 +36,43 @@ section{
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    width: 1050px; 
+    width: 1200px; 
+}
+
+.container-photos p {
+    font-size: 25px;
+    margin-bottom: 15px;
 }
 
 .tech{
-    border: 2px solid black;
-    width: 350px;
-    height: 350px;
+    display: flex;
+    /* border: 2px solid black; */
+    width: 320px;
+    height: 400px;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border-radius: 50px;
+    margin: 10px 5px;
+    box-shadow: 10px 5px 5px black;;
 }
+
 
 .footer{
     display: flex;
     justify-content: center
 }
 
-
-
 .footer img{
     width: 40px;
     margin-left: 20px;
     margin-top: 20px;
-
 }
+
+
+.container-photos img{
+    width: 280px;
+    height: 250px;
+}
+
+
