@@ -1,0 +1,211 @@
+.container{
+    display: flex; /*quando aplicamos essa propriedade no conteiner todos os elementos filho eles recebem a propriedade*/
+    /* flex-direction: row;/*propriedade que fala quem é o MAIN Axis ou CROSS Axis
+    flex-wrap: wrap; */
+    flex-flow: row wrap;/*junção das propriedades flex-direction e flex-wrap*/
+
+}
+
+.quadrado{
+    width: 80px;
+    height: 80px;
+    color: white;
+}
+
+.Um{
+    border: 2px solid black;
+    background-color: black;
+}
+
+.DOIS{
+    border: 2px solid black;
+    background-color: red;
+}
+
+.Tres{
+    border: 2px solid black;
+    background-color: blue;
+}
+
+.box0 {
+    color: #9069EF;
+    background-color: rgb(243, 243, 243);
+    border: 2px solid #232525;
+    font-size: 50px;
+    height: 60px;
+    margin: 10px 5px;
+    text-align: center;
+    width: 30%;
+}
+
+.box-container0 {
+    background-color: #0fa36b;
+    display: flex;
+    /* ADICIONE AQUI SEUS TESTES */
+flex-direction: row;
+}
+
+.flexColumn{
+    flex-direction: column;
+}
+
+.flexColumnRev{
+    flex-direction: column-reverse;
+}
+
+.flexRowRev{
+    flex-direction: row-reverse;
+}
+
+.flexNoWrap{
+    flex-wrap: nowrap;
+}
+
+.flexWrap{
+    flex-wrap: wrap;
+}
+
+.flowPadrao{
+    flex-flow: row nowrap;
+}
+
+.flowOp2{
+    flex-flow: row-reverse wrap;
+}
+
+ .box2 {
+     color: #9069EF;
+     background-color: rgb(243, 243, 243);
+     border: 2px solid #232525;
+     font-size: 50px;
+     height: 60px;
+     margin: 10px 5px;
+     text-align: center;
+     width: 20%;
+ }
+
+ .box-container2 {
+     background-color: #0fa36b;
+     display: flex;
+     /* ADICIONE AQUI SEUS TESTES */
+     justify-content: center;
+ }
+
+ .flexStart{
+     justify-content: flex-start;
+ }
+
+ .flexEnd{
+     justify-content: flex-end;
+ }
+
+ .spaceAround{
+     justify-content: space-around;
+ }
+
+ .spaceBetween{
+     justify-content: space-between;
+ }
+
+
+.box-one {
+    color: #9069EF;
+    background-color: rgb(243, 243, 243);
+    border: 2px solid #232525;
+    font-size: 70px;
+    min-height: 80px;
+    margin: 10px 5px;
+    text-align: center;
+    width: 50px;
+}
+    
+.box-two {
+    color: #9069EF;
+    background-color: rgb(243, 243, 243);
+    border: 2px solid #232525;
+    font-size: 50px;
+    min-height: 60px;
+    margin: 10px 5px;
+    text-align: center;
+    width: 50px;
+}
+    
+.box-three {
+    color: #9069EF;
+    background-color: rgb(243, 243, 243);
+    border: 2px solid #232525;
+    font-size: 30px;
+    margin: 10px 5px;
+    min-height: 50px;
+    text-align: center;
+    width: 50px;
+}
+    
+ .box-container3 {
+    background-color: #0fa36b;
+    display: flex;
+    /* ADICIONE AQUI SEUS TESTES */
+    align-items: center;
+}
+
+.alingFlexStart{
+    align-items: flex-start;
+}
+
+.alingFlexEnd {
+    align-items: flex-end;
+}
+
+.alingStretch {
+    align-items: stretch    ;
+}
+
+.alingBaseLine{
+    align-items: baseline;
+}
+
+.box3 {
+    color: #9069EF;
+    background-color: rgb(243, 243, 243);
+    border: 2px solid #232525;
+    font-size: 50px;
+    min-height: 60px;
+    margin: 10px 5px;
+    text-align: center;
+    width: 30%;
+}
+
+.box-container4 {
+    /* ADICIONE AQUI SEUS TESTES */
+    background-color: #0fa36b;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    align-content: center;
+}
+
+.contentStart{
+    align-content: flex-start;
+}
+
+.contentEnd {
+    align-content: flex-end;
+}
+
+.contentStretch {
+    align-content: stretch;
+
+}
+
+.contentSpaceAround{
+    align-content: space-around;
+}
+
+.contentSpaceBetween{
+    align-content: space-between;
+}
+
+
+
+
+

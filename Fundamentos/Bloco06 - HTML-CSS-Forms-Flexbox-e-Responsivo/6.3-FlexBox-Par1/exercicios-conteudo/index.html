@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FlexBox</title>
+  </head>
+  <body>
+      <h1>Estutura Basica</h1>
+      <hr>
+      <h2>Flex-direction</h2>
+      <h3>1 - Teste as possibilidades (row, column, row-reverse e column-reverse) para a propriedade flex-direction.</h3>
+        <p><em>flex-direction: row(padrão);</em></p>
+    <div class="box-container0">
+      <div class="box0">1</div>
+      <div class="box0">2</div>
+      <div class="box0">3</div>
+      <div class="box0">4</div>
+      <div class="box0">5</div>
+    </div>
+    <p><em>flex-direction: column;</em></p>
+    <div class="box-container0 flexColumn">
+      <div class="box0">1</div>
+      <div class="box0">2</div>
+      <div class="box0">3</div>
+      <div class="box0">4</div>
+      <div class="box0">5</div>
+    </div>
+    <p><em>flex-direction: column-reverse;</em></p>
+    <div class="box-container0 flexColumnRev">
+      <div class="box0">1</div>
+      <div class="box0">2</div>
+      <div class="box0">3</div>
+      <div class="box0">4</div>
+      <div class="box0">5</div>
+    </div>
+    <p><em>flex-direction: row-reverse;</em></p>
+    <div class="box-container0 flexRowRev">
+      <div class="box0">1</div>
+      <div class="box0">2</div>
+      <div class="box0">3</div>
+      <div class="box0">4</div>
+      <div class="box0">5</div>
+    </div>
+    <h2>Flex-wap</h2>
+    <h3>2 - Teste as possibilidades (wrap e nowrap) para a propriedade flex-wrap..</h3>
+        <p><em>flex-wrap: nowrap(padrão)</em></p>
+    <div class="box-container0 flexNoWrap">
+      <div class="box0">1</div>
+      <div class="box0">2</div>
+      <div class="box0">3</div>
+      <div class="box0">4</div>
+      <div class="box0">5</div>
+    </div>
+          <p><em>flex-wrap: wrap</em></p>
+    <div class="box-container0 flexWrap">
+      <div class="box0">1</div>
+      <div class="box0">2</div>
+      <div class="box0">3</div>
+      <div class="box0">4</div>
+      <div class="box0">5</div>
+    </div>
+    <h3>3 - Teste as possibilidades para a propriedade flex-flow(<em>junção das propriedades flex-direction e flex-wrap)</em></h3></h3>
+        <p><em>flex-flow: row nowrap(padrão)</em></p>
+    <div class="box-container0 flowPadrao">
+      <div class="box0">1</div>
+      <div class="box0">2</div>
+      <div class="box0">3</div>
+      <div class="box0">4</div>
+      <div class="box0">5</div>
+    </div>
+          <p><em>flex-flow: row-reverse wrap</em></p>
+    <div class="box-container0 flowOp2">
+      <div class="box0">1</div>
+      <div class="box0">2</div>
+      <div class="box0">3</div>
+      <div class="box0">4</div>
+      <div class="box0">5</div>
+    </div>
+
+    <hr />
+    <h3>
+        <h1>Alinhamentos</h1>
+      1 - Utilizando o código abaixo, teste as possibilidades (center,
+      flex-start, flex-end, space-around e space-between) para a propriedade
+      <em>justify-content</em>.
+    </h3>
+    <p><em>justify-content: center;</em></p>
+    <div class="box-container2">
+      <div class="box2">1</div>
+      <div class="box2">2</div>
+      <div class="box2">3</div>
+    </div>
+    <p><em>justify-content: flex-start;</em></p>
+    <div class="box-container2 flexStart">
+      <div class="box2">1</div>
+      <div class="box2">2</div>
+      <div class="box2 flexStart">3</div>
+    </div>
+    <p><em>justify-content: flex-end;</em></p>
+    <div class="box-container2 flexEnd">
+      <div class="box2">1</div>
+      <div class="box2">2</div>
+      <div class="box2">3</div>
+    </div>
+    <p><em>justify-content: space-around;</em></p>
+    <div class="box-container2 spaceAround">
+      <div class="box2">1</div>
+      <div class="box2">2</div>
+      <div class="box2">3</div>
+    </div>
+    <p><em>justify-content: space-between;</em></p>
+    <div class="box-container2 spaceBetween">
+      <div class="box2">1</div>
+      <div class="box2">2</div>
+      <div class="box2">3</div>
+    </div>
+    <hr>
+    <h3>
+      2 - Teste as possibilidades (center, flex-start, flex-end, stretch e baseline) para a propriedade <em>align-items</em>. Não se esqueça de copiar o código abaixo! 😉
+    </h3>
+    <p><em>align-items: center;</em></p>
+     <div class="box-container3 alingCenter">
+      <div class="box-one">1</div>
+      <div class="box-two">2</div>
+      <div class="box-three">3</div>
+    </div>
+        <p><em>align-items: flex-start;</em></p>
+     <div class="box-container3 alingFlexStart">
+      <div class="box-one">1</div>
+      <div class="box-two">2</div>
+      <div class="box-three">3</div>
+    </div>
+        <p><em>align-items: flex-end;</em></p>
+     <div class="box-container3 alingFlexEnd">
+      <div class="box-one">1</div>
+      <div class="box-two">2</div>
+      <div class="box-three">3</div>
+    </div>
+        <p><em>align-items: stretch;</em></p>
+     <div class="box-container3 alingStretch">
+      <div class="box-one">1</div>
+      <div class="box-two">2</div>
+      <div class="box-three">3</div>
+    </div>
+        <p><em>align-items: baseline;</em></p>
+     <div class="box-container3 alingBaseLine">
+      <div class="box-one">1</div>
+      <div class="box-two">2</div>
+      <div class="box-three">3</div>
+    </div>
+    <hr>
+       <h3>
+     3 - Teste as possibilidades (center, flex-start, flex-end, stretch, space-around e space-between) para a propriedade <em>align-content</em>.
+        <p><em>align-content: center;</em></p>
+      <div class="box-container4 contentCenter">
+      <div class="box3">1</div>
+      <div class="box3">2</div>
+      <div class="box3">3</div>
+      <div class="box3">4</div>
+      <div class="box3">5</div>
+      <div class="box3">6</div>
+      <div class="box3">7</div>
+      <div class="box3">8</div>
+      <div class="box3">9</div>
+    </div>
+            <p><em>align-content: flex-start;</em></p>
+      <div class="box-container4 contentStart">
+      <div class="box3">1</div>
+      <div class="box3">2</div>
+      <div class="box3">3</div>
+      <div class="box3">4</div>
+      <div class="box3">5</div>
+      <div class="box3">6</div>
+      <div class="box3">7</div>
+      <div class="box3">8</div>
+      <div class="box3">9</div>
+    </div>
+            <p><em>align-content: flex-end;</em></p>
+      <div class="box-container4 contentEnd">
+      <div class="box3">1</div>
+      <div class="box3">2</div>
+      <div class="box3">3</div>
+      <div class="box3">4</div>
+      <div class="box3">5</div>
+      <div class="box3">6</div>
+      <div class="box3">7</div>
+      <div class="box3">8</div>
+      <div class="box3">9</div>
+    </div>
+            <p><em>align-content: stretch;</em></p>
+      <div class="box-container4 contentStretch">
+      <div class="box3">1</div>
+      <div class="box3">2</div>
+      <div class="box3">3</div>
+      <div class="box3">4</div>
+      <div class="box3">5</div>
+      <div class="box3">6</div>
+      <div class="box3">7</div>
+      <div class="box3">8</div>
+      <div class="box3">9</div>
+    </div>
+            <p><em>align-content: space-around;</em></p>
+      <div class="box-container4 contentSpaceAround">
+      <div class="box3">1</div>
+      <div class="box3">2</div>
+      <div class="box3">3</div>
+      <div class="box3">4</div>
+      <div class="box3">5</div>
+      <div class="box3">6</div>
+      <div class="box3">7</div>
+      <div class="box3">8</div>
+      <div class="box3">9</div>
+    </div>
+            <p><em>align-content: space-between;</em></p>
+      <div class="box-container4 contentSpaceBetween">
+      <div class="box3">1</div>
+      <div class="box3">2</div>
+      <div class="box3">3</div>
+      <div class="box3">4</div>
+      <div class="box3">5</div>
+      <div class="box3">6</div>
+      <div class="box3">7</div>
+      <div class="box3">8</div>
+      <div class="box3">9</div>
+    </div>
+
+  </body>
+</html>
