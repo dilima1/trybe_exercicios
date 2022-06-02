@@ -1,4 +1,4 @@
-const validation = new window.JustValidate("#form");
+const validation = new JustValidate("#form");
 const botaoEnviar = document.getElementById("botao-enviar");
 const botaoLimpar = document.getElementById("botao-apagar");
 const condicaoOne = document.getElementById("condicao1");
@@ -9,13 +9,13 @@ const email = document.getElementById("email-part");
 const resposta = document.getElementById("resposta-usuario");
 const data = document
   .getElementById("date")
-  .DatePickerX.init([{ format: "dd-mm-yyyy" }]);
+  .DatePickerX.init({ format: "D-M-YYYY" });
 
-function desabilitarBotao(e) {
-  e.preventDefault();
-}
+// function desabilitarBotao(e) {
+//   e.preventDefault();
+// }
 
-botaoEnviar.addEventListener("click", desabilitarBotao);
+// botaoEnviar.addEventListener("click", desabilitarBotao);
 
 function limparCampos() {
   nome.value = "";
@@ -41,31 +41,41 @@ condicaoTwo.addEventListener("click", enviarFotos);
 // alerta deve ser mostrado com a mensagem: 'Dados Inválidos'. Caso contrário, a mensagem 'Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.' deverá aparecer na tela
 
 function verificaCampos() {
-  // if (
-  //   nome.value.length >= 10 &&
-  //   nome.value.length <= 40 &&
-  //   email.value.length >= 10 &&
-  //   email.value.length <= 50 &&
-  //   resposta.value.length <= 500
-  // ) {
-  //   alert(
-  //     "Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip"
-  //   );
-  // } else {
-  //   alert("Dados Inválidos");
-  // }
+  //   // if (
+  //   //   nome.value.length >= 10 &&
+  //   //   nome.value.length <= 40 &&
+  //   //   email.value.length >= 10 &&
+  //   //   email.value.length <= 50 &&
+  //   //   resposta.value.length <= 500
+  //   // ) {
+  //   //   alert(
+  //   //     "Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip"
+  //   //   );
+  //   // } else {
+  //   //   alert("Dados Inválidos");
+  //   // }
 
-  validation.addField("#nome-part", [
-    {
-      rule: "minLength",
-      value: 10,
-      errorMessage: "Valor Incorreto",
-    },
-    {
-      rule: "maxLength",
-      value: 40,
-    },
-  ]);
+  validation
+    .addField("#nome-part", [
+      {
+        rule: "minLength",
+        value: 10,
+      },
+      {
+        rule: "maxLength",
+        value: 40,
+      },
+    ])
+    .addField("#email-part", [
+      {
+        rule: "required",
+        errorMessage: "Email is required",
+      },
+      {
+        rule: "email",
+        errorMessage: "Email is invalid!",
+      },
+    ]);
 }
 
 botaoEnviar.addEventListener("click", verificaCampos);
