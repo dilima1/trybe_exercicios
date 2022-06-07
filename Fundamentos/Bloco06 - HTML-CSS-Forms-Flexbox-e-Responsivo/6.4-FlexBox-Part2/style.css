@@ -14,23 +14,28 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
+    
 }
 
 .logo-container {
     display: flex;
-    justify-content: center;
     width: 268px;
+    
 }
 
 .menu-container {
     display: flex;
     width: 500px;
+    flex-grow: 1;
+    
 }
 
 .menu-container ul {
     display: flex;
-    justify-content: space-around;
     width: 100%;
+    justify-content: space-around;
+    align-self: center;
+    
 }
 
 .menu-container li {
@@ -39,4 +44,72 @@ body {
     font-size: 1.3rem;
     list-style: none;
     margin-right: 10px;
+    display: flex; 
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.movie-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 700px; 
+    flex-grow: 10;
+    
+    
+}
+
+.movie-container h2 {
+    margin: 40px 0;
+    text-align: center;
+
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.card-container div {
+    align-items: center;
+    background-color: #5C687C;
+    border: black solid 1px;
+    display: flex;
+    flex-basis: 16%;
+    height: 150px;
+    justify-content: center;
+    margin: 10px;
+    flex-grow: 1;
+
+
+}
+
+.aside-container {
+    align-self: center;
+        display: flex;
+        flex-basis: 350px;
+        flex-direction: column;
+        flex-grow: 1;
+        margin: 20px;
+}
+
+.aside-container h3,
+h4 {
+    margin-bottom: 10px;
+    text-align: center;
+
+ 
+}
+
+.aside-container p {
+    margin: 10px 0;
+    text-align: justify;
+ 
+   
 }
