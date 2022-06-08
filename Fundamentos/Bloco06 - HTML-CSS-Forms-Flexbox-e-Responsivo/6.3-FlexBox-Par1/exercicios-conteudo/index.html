@@ -9,6 +9,7 @@
   </head>
   <body>
       <h1>Estutura Basica</h1>
+      <h3><em>OBS: devemos adicionar a propriedade na clase do container, elemento PAI que desejamos alterar.</em></h3>
       <hr>
       <h2>Flex-direction</h2>
       <h3>1 - Teste as possibilidades (row, column, row-reverse e column-reverse) para a propriedade flex-direction.</h3>
@@ -81,8 +82,8 @@
     </div>
 
     <hr />
+    <h1>Alinhamentos</h1>
     <h3>
-        <h1>Alinhamentos</h1>
       1 - Utilizando o código abaixo, teste as possibilidades (center,
       flex-start, flex-end, space-around e space-between) para a propriedade
       <em>justify-content</em>.
@@ -226,6 +227,47 @@
       <div class="box3">8</div>
       <div class="box3">9</div>
     </div>
+      <hr />
+    <h1>Parte 2 - Alinhamento dos Itens dentro do Conteiner</h1>
+    <h3><em>OBS: diferente da primeira parte, aplicamos a clase no item que desejamos mudar sua posição e adicionamos a propriedade na clase do mesmo.</em></h3>
+    <h3>
+      1 - Utilizando o código abaixo, teste as possibilidades (flex-start, flex-end, stretch, baseline, center) para a propriedade
+      <em>align-self</em>.
+    </h3>
+     <p><em>align-self: flex-start</em></p>
+    <ul class="container5">
+      <li class="keep">REFERÊNCIA</li>
+      <li class="change">ELEMENTO TESTE</li>
+      <li class="keep">REFERÊNCIA</li>
+    </ul>
+
+    <p><em>align-self: flex-end</em></p>
+    <ul class="container5">
+      <li class="keep">REFERÊNCIA</li>
+      <li class="change selfFlexEnd">ELEMENTO TESTE</li>
+      <li class="keep">REFERÊNCIA</li>
+    </ul>
+
+    <p><em>align-self: stretch</em></p>
+    <ul class="container5">
+      <li class="keep">REFERÊNCIA</li>
+      <li class="change selfStretch">ELEMENTO TESTE</li>
+      <li class="keep">REFERÊNCIA</li>
+    </ul>
+
+    <p><em>align-self: baseline</em></p>
+    <ul class="container5">
+      <li class="keep">REFERÊNCIA</li>
+      <li class="change selfBaseLine">ELEMENTO TESTE</li>
+      <li class="keep">REFERÊNCIA</li>
+    </ul>
+
+        <p><em>align-self: center</em></p>
+    <ul class="container5">
+      <li class="keep">REFERÊNCIA</li>
+      <li class="change selfCenter">ELEMENTO TESTE</li>
+      <li class="keep">REFERÊNCIA</li>
+    </ul>
 
   </body>
 </html>

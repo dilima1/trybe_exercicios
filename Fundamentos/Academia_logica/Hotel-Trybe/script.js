@@ -30,11 +30,16 @@ function fazerReserva() {
   let reservaDia = document.createElement("li");
 
   reservaDia.innerHTML =
-    "Reserva para dia " + checkin.value + " até o dia " + checkout.value;
+    "Reserva para dia " +
+    getData(checkin.value) +
+    " até o dia " +
+    getData(checkout.value) +
+    " no quarto " +
+    getQuarto();
 
   ol.appendChild(reservaDia);
 
-  //Reserva para o dia xx/xx/xxxx até o dia xx/xx/xxxx
+  //  `Reserva para o dia xx/xx/xxxx até o dia xx/xx/xxxx``Quarto x - Para x Pessoas - Obs: xxxx``Obs: xxxxxx`;
 }
 
-btnSubmit.addEventListener("click", fazerReserva);
+btnSubmit.addEventListener("click", fazerReserva, getQuarto());
