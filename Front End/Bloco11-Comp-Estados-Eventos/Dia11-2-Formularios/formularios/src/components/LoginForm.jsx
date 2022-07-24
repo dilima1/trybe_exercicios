@@ -3,27 +3,41 @@ import LoginEmail from './LoginEmail';
 import LoginPassword from './LoginPassword';
 
 export class LoginForm extends Component {
-    state = {
-      email: '',
-      password: '',
-      buttonDisabled: false
-    }
+  state = {
+    email: '',
+    password: '',
+    buttonDisabled: true
+  }
 
-    handleChange(event) {
-      console.log(event.target.value);
-    }
+  handleChange = (event) => {
+    this.setState({[event.target.name]: event.target.value}, () => {
+      const {email, password} = this.state;
+      const buttonIsDisabled = email.length === 0 || password.length === 0;
+
+      this.setState({
+        buttonDisabled: buttonIsDisabled
+      })
+    
+    })
+  }
+
+  handleSubmit = (event) => {
+    event.preventDefault()
+
+  }
 
   render() {
 
-    const { email, password } = this.state;
+    const { email, password, buttonDisabled } = this.state;
 
     return (
       <section>
-        <h1>Login</h1>
-        <LoginEmail email={ email } handleChange={ this.handleChange }/>
-        <LoginPassword password={ password } handleChange={ this.handleChange }/>
-
-        <button disabled>Fazer Login</button>
+        <form onSubmit={this.handleSubmit}>
+          <h1>Login</h1>
+          <LoginEmail email={ email } handleChange={ this.handleChange }/>
+          <LoginPassword password={ password } handleChange={ this.handleChange }/>
+          <button disabled={buttonDisabled}>Fazer Login</button>
+        </form>
       </section>
     )
   }

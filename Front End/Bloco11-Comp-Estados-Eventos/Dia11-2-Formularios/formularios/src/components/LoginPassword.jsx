@@ -11,7 +11,7 @@ export class LoginPassword extends Component {
 
         <input 
         type="password" 
-        ame="password" 
+        name="password" 
         id="password" 
         placeholder="Digite sua Senha" 
         onChange={ handleChange }/>
