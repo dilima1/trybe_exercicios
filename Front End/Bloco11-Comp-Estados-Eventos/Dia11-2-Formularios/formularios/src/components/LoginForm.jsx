@@ -22,7 +22,9 @@ export class LoginForm extends Component {
   }
 
   handleSubmit = (event) => {
-    event.preventDefault()
+    event.preventDefault();
+    const { email, password } = this.state;
+    alert(`Foi feito com o email ${email} e a senha ${password}`);
 
   }
 
