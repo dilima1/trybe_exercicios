@@ -24,15 +24,27 @@
 
     🚀 7 - Verifique na sua lista de contêiners qual contêiner se refere ao exercício que acabou de praticar.
 
+          R - docker ps
+
     🚀 8 - Inicie o mesmo contêiner novamente, sem criar outro. Valide se ele está ativo na lista de contêiners.
+
+          R - docker start ID_CONTAINER || NAMES
 
     🚀 9 - Retome o contêiner que foi criado anteriormente neste exercício.
 
+          R - docker attach ID_CONTAINER
+
     🚀 10 - Rode o comando cat /etc/debian_version que deve retornar a versão atual do sistema do contêiner.
+
+          R - cat /etc/debian_version
 
     🚀 11 - Encerre o terminal.
 
+          R - exit
+
     🚀 12 - Remova somente o contêiner criado para esse exercício.
+
+          R - docker rm ID_CONTAINER
  
     [BÔNUS] 13 - Crie e rode de modo interativo em modo ‘Cleanup’, a imagem andrius/ascii-patrol.
 
