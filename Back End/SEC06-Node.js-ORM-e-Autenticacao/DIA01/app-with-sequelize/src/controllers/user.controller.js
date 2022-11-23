@@ -1,6 +1,4 @@
-// src/controllers/user.controller.js
-
-// const UserService = require('../services/user.service');
+const UserService = require('../services/user.service');
 
 const error500Message = 'Algo deu errado';
 
