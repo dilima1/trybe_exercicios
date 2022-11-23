@@ -122,4 +122,17 @@ show databases;
 
 ➡️ Perceba que, a partir desses passos, o banco orm_example foi criado e você não precisou escrever nenhuma linha de SQL para isso. Essa é uma das primeiras vantagens que o Sequelize nos oferece. ⭐
 
+Criar migrations
+
+  --> npx sequelize migration:generate --name create-user
+
+Criar seeders
+
+  --> npx sequelize seed:generate --name users
+  --> npx sequelize db:seed:all
+
+Para reverter o seed, use o seguinte comando:
+
+  --> npx sequelize db:seed:undo:all
+
 
